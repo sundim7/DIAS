@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/cardlayout"
+    android:padding="10dp"
+    tools:context="com.sundim7.dias.Notices.FragmentNoticeDetail" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="RobotoTextView"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvsubject"
+        android:text="RobotoTextView"  />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvdate"
+            android:layout_margin="2dp"
+            android:background="#DEAC12" />
+
+    <TextView
+            android:id="@+id/tvmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/divider"
+            android:layout_marginTop="14dp"
+            android:text="RobotoTextView"   />
+
+    <Button
+        android:id="@+id/attachButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvmessage"
+        android:layout_below="@+id/tvmessage"
+        android:layout_marginTop="5dp"
+        android:minHeight="36dp"
+        android:text="Attachment" 
+        android:visibility="invisible"/>
+
+</RelativeLayout>
